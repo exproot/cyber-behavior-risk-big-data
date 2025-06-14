@@ -1,6 +1,6 @@
 # Gençlerin Çevrim İçi Davranışlarının Analizi ve Siber Güvenlik Risklerinin Öngörülmesi
 
-Bu proje, Samsun Üniversitesi Yazılım Mühendisliği MYAZ468 Büyük Veri dersi için dönem projesi olarak geliştirilmiştir. Proje gençlerin çevrim içi aktivitelerine ilişkin verileri analiz ederek siber güvenlik davranışlarını sınıflandırmayı ve potansiyel riskleri öngörmeyi amaçlamaktadır. Proje kapsamında, veri madenciliği ve makine öğrenmesi yöntemleri kullanılarak veri ön işleme, özellik mühendisliği ve modelleme süreçleri gerçekleştirilmiştir.
+Bu proje, Samsun Üniversitesi Yazılım Mühendisliği Bölümü MYAZ468 Büyük Veri dersi için dönem projesi olarak geliştirilmiştir. Proje gençlerin çevrim içi aktivitelerine ilişkin verileri analiz ederek siber güvenlik davranışlarını sınıflandırmayı ve potansiyel riskleri öngörmeyi amaçlamaktadır. Proje kapsamında, veri madenciliği ve makine öğrenmesi yöntemleri kullanılarak veri ön işleme, özellik mühendisliği ve modelleme süreçleri gerçekleştirilmiştir.
 
 ## Proje Amacı
 
@@ -17,27 +17,20 @@ Bu proje, Samsun Üniversitesi Yazılım Mühendisliği MYAZ468 Büyük Veri der
 
 ## Kullanılan Yöntemler
 
-### 1. Veri Ön İşleme
+### Veri Ön İşleme
 - Eksik değer kontrolü
 - Kategorik verilerin sayısallaştırılması
 - SMOTE ile sınıf dengesi sağlanması
 
-### 2. Özellik Mühendisliği
+### Özellik Mühendisliği
 - `Risk_Index`, `Suspicious_Flag`, `Download_And_Purchase_Risk` gibi yeni değişkenler türetildi
 - Yaş grubu ve sosyal medya etkileşimi gibi çapraz öznitelikler oluşturuldu
 
-### 3. Modelleme Aşamaları
+### Modelleme Aşamaları
 - **Aşama 1:** Çok sınıflı XGBoost (başarısız oldu, dengesizlik sorunu)
 - **Aşama 2:** 2 sınıflı XGBoost + türetilmiş öznitelikler
 - **Aşama 3:** Ensemble (XGBoost + RandomForest + Logistic Regression)
 - **Aşama 4:** KMeans ile kümeye dayalı temizlik + XGBoost
-
-### 4. Görsel Analizler
-- Parola gücü ve risk oranları
-- Sosyal medya kullanımı ve risk ilişkisi
-- VPN ve Risk davranışı ilişkisi
-- Yaş dağılımı ve risk durumu
-- Özellik önemleri ve ısı haritaları
 
 ## Sonuçlar
 
